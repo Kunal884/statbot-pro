@@ -1,7 +1,7 @@
 # StatBot Pro
 
 An autonomous CSV data analyst agent with a modern React frontend that generates Python code to answer natural language questions about your data.
-
+ 
 ## 🚀 Features
 
 - **Modern Web Interface**: Beautiful React frontend with real-time chat interface
