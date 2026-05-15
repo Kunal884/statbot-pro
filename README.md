@@ -394,7 +394,7 @@ For issues and questions:
 
 - **Kunal Girme** — [github.com/Kunal884](https://github.com/Kunal884)
 - **Sreeparna Mukherjee** — [github.com/SreeparnaMukherjee](https://github.com/SreeparnaMukherjee)
-
+- **Sanika Linge** — [github.com/sanikalinge448-rgb ](https://github.com/sanikalinge448-rgb)
 ---
 
 *Built as part of the Infotact Solutions Internship Program — May 2026*
