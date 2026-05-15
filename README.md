@@ -2,7 +2,7 @@
 
 An autonomous CSV data analyst agent with a modern React frontend that generates Python code to answer natural language questions about your data.
  
-## 🚀 Features
+## Features
 
 - **Modern Web Interface**: Beautiful React frontend with real-time chat interface
 - **Autonomous Analysis**: Upload CSV files and ask questions in natural language
@@ -13,7 +13,7 @@ An autonomous CSV data analyst agent with a modern React frontend that generates
 - **REST API**: Full API access for programmatic usage
 - **Session Management**: Maintain context across multiple questions
 
-## 🏗️ Architecture
+## Architecture
 
 - **Frontend**: React + TypeScript + Vite + shadcn/ui
 - **Backend**: FastAPI (Python)
@@ -23,9 +23,9 @@ An autonomous CSV data analyst agent with a modern React frontend that generates
 - **Security**: Sandboxed code execution with restricted imports
 - **Storage**: Local filesystem with public URLs for charts
 
-## ✅ System Status
+## System Status
 
-**Frontend-Backend Integration**: ✅ **FULLY INTEGRATED & CLEAN**
+**Frontend-Backend Integration**: **FULLY INTEGRATED & CLEAN**
 - Modern React frontend with real-time chat interface
 - Complete API integration with backend
 - Session management working correctly
@@ -35,17 +35,17 @@ An autonomous CSV data analyst agent with a modern React frontend that generates
 - All third-party references removed
 
 **Current Features**:
-- ✅ CSV file upload with drag-and-drop interface
-- ✅ Real-time data analysis with AI agent
-- ✅ Interactive chat interface for questions
-- ✅ Automatic chart generation and display
-- ✅ Session-based data management
-- ✅ Comprehensive error handling
-- ✅ Production-ready backend with monitoring
-- ✅ Modern UI with shadcn/ui components
-- ✅ Clean codebase with no external dependencies
+-  CSV file upload with drag-and-drop interface
+-  Real-time data analysis with AI agent
+-  Interactive chat interface for questions
+-  Automatic chart generation and display
+-  Session-based data management
+-  Comprehensive error handling
+-  Production-ready backend with monitoring
+-  Modern UI with shadcn/ui components
+-  Clean codebase with no external dependencies
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Option 1: Production Deployment
 
