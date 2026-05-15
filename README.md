@@ -122,7 +122,7 @@ docker-compose up --build
 http://localhost:8000
 ```
 
-## 📊 Usage Examples
+## Usage Examples
 
 ### Modern Web Interface
 1. Open http://localhost:8080 in your browser
@@ -168,7 +168,7 @@ feat: implement AI-powered CSV analysis system
 - Enabled chart visualization support
 - Added secure sandbox execution
   
-## 🔒 Security Features
+## Security Features
 
 - **Sandboxed Execution**: Code runs in restricted environment
 - **Limited Imports**: Only pandas, numpy, matplotlib, math allowed
@@ -232,7 +232,7 @@ statbot-pro/
 └── README.md           # This file
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Basic Functionality Test
 ```bash
@@ -250,7 +250,7 @@ python advanced_test.py
 3. Upload `example_data.csv`
 4. Try the example questions provided in the interface
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 - `PORT`: Server port (default: 8001)
@@ -264,7 +264,7 @@ The agent's security settings are configured in `agent.py`:
 - `BLOCKED_BUILTINS`: Restricted built-in functions
 - `timeout`: Code execution timeout (default: 30 seconds)
 
-## 🚀 Production Deployment
+## Production Deployment
 
 ### Docker Deployment (Recommended)
 ```bash
@@ -283,7 +283,7 @@ docker run -p 8080:8000 -v $(pwd)/data:/app/workspace statbot-pro
 - Monitor resource usage
 - Regular security updates
 
-## 🤝 API Reference
+## API Reference
 
 ### Endpoints
 
@@ -359,7 +359,7 @@ pip install -r requirements.txt
 - Add memory monitoring
 - Consider using Dask for big data
 
-## 📈 Performance Tips
+## Performance Tips
 
 - Use smaller CSV files for faster processing
 - Cache frequently used datasets
@@ -367,7 +367,7 @@ pip install -r requirements.txt
 - Monitor memory usage with large datasets
 - Use async processing for multiple requests
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - Support for multiple file formats (Excel, JSON, Parquet)
 - Advanced ML capabilities (clustering, classification)
@@ -377,11 +377,11 @@ pip install -r requirements.txt
 - Natural language to SQL conversion
 - Integration with cloud storage (S3, GCS)
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -389,12 +389,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 4. Add tests
 5. Submit a pull request
 
-## 📞 Support
-
-For issues and questions:
-- Create an issue on GitHub
-- Check the troubleshooting sections
-- Review the API documentation
 
 ## Team Members
 
