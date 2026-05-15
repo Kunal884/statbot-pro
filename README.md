@@ -161,7 +161,13 @@ curl -X POST -H "Content-Type: application/json" \
 # Charts are available at /static/{chart_name}.png
 curl http://localhost:8001/static/chart_abc123.png
 ```
+feat: implement AI-powered CSV analysis system
 
+- Added natural language question processing
+- Integrated autonomous Python code generation
+- Enabled chart visualization support
+- Added secure sandbox execution
+  
 ## 🔒 Security Features
 
 - **Sandboxed Execution**: Code runs in restricted environment
