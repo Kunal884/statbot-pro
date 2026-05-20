@@ -365,7 +365,19 @@ pip install -r requirements.txt
 - Cache frequently used datasets
 - Implement connection pooling for high traffic
 - Monitor memory usage with large datasets
-- Use async processing for multiple requests
+- Use async processing for multiple request
+- 
+**Data & Processing**
+- Implemented session-based CSV storage with unique file identifiers
+- Added dataframe schema inspection before code generation
+- Enabled multi-column statistical aggregations and group-by operations
+- Supported time series parsing and rolling window calculations
+
+**Agent & AI**
+- Built self-correcting agent loop with up to 3 automatic retries on errors
+- Added intent detection to route questions to computation vs. visualization paths
+- Injected dataframe context into prompts for schema-aware code generation
+- Restricted sandbox to pandas, numpy, matplotlib, and math imports only
 
 ## Future Enhancements
 
