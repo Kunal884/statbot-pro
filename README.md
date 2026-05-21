@@ -390,6 +390,19 @@ pip install -r requirements.txt
 - Blocked subprocess, os.system, and file I/O inside sandboxed execution
 - Set 30-second execution timeout to prevent runaway code loops
 
+**Frontend**
+- Built drag-and-drop CSV upload with instant column/shape preview
+- Rendered AI responses and chart images inline in chat thread
+- Displayed step-by-step agent progress in real time
+- Handled API errors gracefully with user-facing feedback messages
+
+**DevOps**
+- Added `docker-compose.yml` for single-command local and production setup
+- Included `start-dev.py` and `start-dev.bat` for cross-platform dev startup
+- Configured Vite proxy to route frontend API calls to FastAPI backend
+- Provided Render + Vercel deployment path with environment variable docs
+
+
 ## Future Enhancements
 
 - Support for multiple file formats (Excel, JSON, Parquet)
