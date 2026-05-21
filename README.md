@@ -378,6 +378,17 @@ pip install -r requirements.txt
 - Added intent detection to route questions to computation vs. visualization paths
 - Injected dataframe context into prompts for schema-aware code generation
 - Restricted sandbox to pandas, numpy, matplotlib, and math imports only
+- 
+**Visualization**
+- Auto-saved matplotlib charts as uniquely named PNGs to static directory
+- Returned chart URLs in API responses for frontend rendering
+- Supported histogram, scatter, line, heatmap, and box plot generation
+
+**API & Backend**
+- Exposed REST endpoints for upload, question answering, and chart retrieval
+- Added `/health` endpoint for uptime monitoring and deployment checks
+- Blocked subprocess, os.system, and file I/O inside sandboxed execution
+- Set 30-second execution timeout to prevent runaway code loops
 
 ## Future Enhancements
 
