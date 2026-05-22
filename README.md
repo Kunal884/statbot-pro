@@ -401,7 +401,16 @@ pip install -r requirements.txt
 - Included `start-dev.py` and `start-dev.bat` for cross-platform dev startup
 - Configured Vite proxy to route frontend API calls to FastAPI backend
 - Provided Render + Vercel deployment path with environment variable docs
+- 
+## Security
+- Restrict allowed file extensions to .csv only on upload endpoint
+- Add file size limit validation before processing large uploads
+- Sanitize column names before injecting into generated code prompts
 
+## Refactor
+- Extract sandbox execution logic into dedicated sandbox.py module
+- Centralize error messages into constants file for easier localization
+- Replace inline API URLs with environment-based config in frontend
 
 ## Future Enhancements
 
