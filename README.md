@@ -443,6 +443,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 5. Submit a pull request
 
 
+## Features
+- Upload CSV files
+- Ask questions in natural language
+- Automatic charts and insights
+- AI-powered data analysis
+
+
 ## Team Members
 
 - **Kunal Girme** — [github.com/Kunal884](https://github.com/Kunal884)
