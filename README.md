@@ -411,6 +411,14 @@ pip install -r requirements.txt
 - Extract sandbox execution logic into dedicated sandbox.py module
 - Centralize error messages into constants file for easier localization
 - Replace inline API URLs with environment-based config in frontend
+- 
+##   Bug Fixes
+
+- Fix session state not persisting across multiple CSV uploads
+- Resolve matplotlib figure not closing after chart generation causing memory leak
+- Fix CORS headers missing on /upload_csv endpoint for cross-origin requests
+- Handle edge case where CSV has no numeric columns for statistical analysis
+
 
 ## Future Enhancements
 
