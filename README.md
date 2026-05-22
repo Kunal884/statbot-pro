@@ -34,6 +34,7 @@ An autonomous CSV data analyst agent with a modern React frontend that generates
 - Error handling and user feedback
 - All third-party references removed
 
+
 **Current Features**:
 -  CSV file upload with drag-and-drop interface
 -  Real-time data analysis with AI agent
