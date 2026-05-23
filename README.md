@@ -178,6 +178,7 @@ feat: implement AI-powered CSV analysis system
 - **Execution Timeout**: Prevents infinite loops
 - **Input Validation**: All inputs sanitized and validated
 
+
 ## 🤖 Agent Capabilities
 
 ### Autonomous Behavior
@@ -468,6 +469,12 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Improved production setup documentation
 - Added deployment checklist
 - Enhanced project structure for cloud deployment
+
+## Challenges Faced
+_Python 3.14 incompatible with Pandas 2.1.3 → solved by switching to Python 3.11
+-Missing logs/ and static/ directories causing server crash → fixed by creating them
+-CORS issues between frontend and backend → resolved with FastAPI CORSMiddleware
+-OpenAI API requires billing credits → configured .env with API key
 
 ## Features
 - Upload CSV files
