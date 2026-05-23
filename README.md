@@ -34,6 +34,7 @@ An autonomous CSV data analyst agent with a modern React frontend that generates
 - Error handling and user feedback
 - All third-party references removed
 
+
 **Current Features**:
 -  CSV file upload with drag-and-drop interface
 -  Real-time data analysis with AI agent
@@ -47,7 +48,7 @@ An autonomous CSV data analyst agent with a modern React frontend that generates
 
 ##  Quick Start
 
-### Option 1: Production Deployment
+### Option 1: Production Deployment:
 
 **Backend (Render)**:
 1. Fork this repository
@@ -418,6 +419,26 @@ pip install -r requirements.txt
 - Resolve matplotlib figure not closing after chart generation causing memory leak
 - Fix CORS headers missing on /upload_csv endpoint for cross-origin requests
 - Handle edge case where CSV has no numeric columns for statistical analysis
+
+
+## Maintenance/refactor-focused:
+
+- refactor: modularize sandbox execution and centralize config
+- Extract sandboxed code runner into dedicated sandbox.py module
+- Centralize error messages into constants.py for localization support
+- Replace hardcoded API URLs with VITE_API_URL env variable in frontend
+- Add .csv extension whitelist validation on upload route
+- Close matplotlib figures explicitly after chart save to fix memory leak
+
+## Feature-focused
+feat: enhance StatBot Pro with improved agent reliability and UX
+
+- Add retry logic display in chat for failed code executions
+- Improve chart cleanup to prevent matplotlib memory leaks
+- Validate CSV column names before code generation prompt injection
+- Add file size limit check on upload endpoint
+- Fix CORS headers on /upload_csv for cross-origin requests
+- Update session state to persist across multiple CSV uploads
 
 
 ## Future Enhancements
