@@ -421,6 +421,17 @@ pip install -r requirements.txt
 - Handle edge case where CSV has no numeric columns for statistical analysis
 
 
+## Maintenance/refactor-focused:
+
+- refactor: modularize sandbox execution and centralize config
+- Extract sandboxed code runner into dedicated sandbox.py module
+- Centralize error messages into constants.py for localization support
+- Replace hardcoded API URLs with VITE_API_URL env variable in frontend
+- Add .csv extension whitelist validation on upload route
+- Close matplotlib figures explicitly after chart save to fix memory leak
+
+
+
 ## Future Enhancements
 
 - Support for multiple file formats (Excel, JSON, Parquet)
