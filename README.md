@@ -430,6 +430,15 @@ pip install -r requirements.txt
 - Add .csv extension whitelist validation on upload route
 - Close matplotlib figures explicitly after chart save to fix memory leak
 
+## Feature-focused
+feat: enhance StatBot Pro with improved agent reliability and UX
+
+- Add retry logic display in chat for failed code executions
+- Improve chart cleanup to prevent matplotlib memory leaks
+- Validate CSV column names before code generation prompt injection
+- Add file size limit check on upload endpoint
+- Fix CORS headers on /upload_csv for cross-origin requests
+- Update session state to persist across multiple CSV uploads
 
 
 ## Future Enhancements
