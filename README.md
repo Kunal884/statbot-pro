@@ -48,7 +48,7 @@ An autonomous CSV data analyst agent with a modern React frontend that generates
 
 ##  Quick Start
 
-### Option 1: Production Deployment
+### Option 1: Production Deployment:
 
 **Backend (Render)**:
 1. Fork this repository
