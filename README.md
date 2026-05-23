@@ -476,6 +476,14 @@ _Python 3.14 incompatible with Pandas 2.1.3 → solved by switching to Python 3.
 -CORS issues between frontend and backend → resolved with FastAPI CORSMiddleware
 -OpenAI API requires billing credits → configured .env with API key
 
+## Future Scope
+-Support Excel, JSON, Parquet file formats
+-Add user login and saved analysis history
+-Integrate free open-source LLM (LLaMA) to remove OpenAI cost
+-Deploy on Render (backend) + Vercel (frontend)
+-Add PDF export of analysis results
+-Multi-user session management
+
 ## Features
 - Upload CSV files
 - Ask questions in natural language
