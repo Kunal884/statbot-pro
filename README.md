@@ -276,6 +276,13 @@ docker build -t statbot-pro .
 # Run with custom port
 docker run -p 8080:8000 -v $(pwd)/data:/app/workspace statbot-pro
 ```
+## Backend Enhancements
+
+- Caching Layer — Cache repeated queries on same dataset for faster responses
+- Async Job Queue — Handle long-running analyses without blocking the API
+- Webhook Support — Notify external services when analysis completes
+- Rate Limiting — Per-session request throttling to prevent abuse
+- CSV Validation — Pre-execution schema validation before agent runs
 
 ### Security Considerations
 - Run behind a reverse proxy (nginx/Apache)
