@@ -65,7 +65,7 @@ An autonomous CSV data analyst agent with a modern React frontend that generates
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
  
-### Option 2: Development Mode (Local)
+### Option 2: Development Mode (Local):
 
 1. **Setup environment variables:**
 ```bash
