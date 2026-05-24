@@ -203,6 +203,12 @@ feat: implement AI-powered CSV analysis system
 - "Create a box plot showing price distribution by category"
 - "Find outliers in the revenue data"
 
+## Agent Intelligence
+- Multi-step Reasoning — Break complex questions into sub-tasks automatically
+- Confidence Scoring — Show how confident the agent is in each answer
+- Fallback Explanation — Plain English explanation when code execution fails
+- Context Memory — Remember previous answers to support follow-up questions
+
 ## 📁 Project Structure
 
 ```
@@ -492,7 +498,6 @@ _Python 3.14 incompatible with Pandas 2.1.3 → solved by switching to Python 3.
 -Multi-user session management
 
 ## Key Features of Our Project:
-
 - Easy CSV dataset upload
 - Natural language question answering
 - AI-generated insights and analysis
