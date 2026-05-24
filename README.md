@@ -491,12 +491,13 @@ _Python 3.14 incompatible with Pandas 2.1.3 → solved by switching to Python 3.
 -Add PDF export of analysis results
 -Multi-user session management
 
-## Features
-- Upload CSV files
-- Ask questions in natural language
-- Automatic charts and insights
-- AI-powered data analysis
+## Key Features of Our Project:
 
+- Easy CSV dataset upload
+- Natural language question answering
+- AI-generated insights and analysis
+- Automatic chart and graph generation
+- User-friendly interface with no coding required
 
 ## Team Members
 
