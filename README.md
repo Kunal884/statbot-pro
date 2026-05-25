@@ -303,6 +303,19 @@ docker run -p 8080:8000 -v $(pwd)/data:/app/workspace statbot-pro
 - Rate Limiting — Per-session request throttling to prevent abuse
 - CSV Validation — Pre-execution schema validation before agent runs
 
+## Backend/Security
+
+feat(backend): strengthen API security and performance
+
+- Implemented rate limiting on /ask_question to prevent API abuse
+- Added backend request logging with response time tracking
+- Added CORS headers to /upload_csv for cross-origin support
+- Blocked subprocess, os.system and file I/O in sandboxed execution
+- Fixed session state persistence across multiple CSV uploads
+- Added graceful error handling for CSVs with no numeric columns
+- Implemented request debouncing to prevent duplicate submissions
+- Added /health endpoint for uptime monitoring and deployment checks
+
 ### Security Considerations
 - Run behind a reverse proxy (nginx/Apache)
 - Enable HTTPS with SSL certificates
