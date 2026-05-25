@@ -381,7 +381,20 @@ pip install -r requirements.txt
 - Implement connection pooling for high traffic
 - Monitor memory usage with large datasets
 - Use async processing for multiple request
-- 
+
+## Data Preview & Upload
+
+feat(upload): improve CSV upload and data preview experience
+
+- Implemented drag-and-drop file upload with visual drop zone highlight
+- Supported CSV preview table with pagination before analysis
+- Added summary card showing row count, column count, and null values
+- Highlighted missing value percentage per column in data preview
+- Displayed dataframe shape and column preview after CSV upload
+- Added toast notifications for upload success and error states
+- Validated .csv-only file extension restriction on upload endpoint
+- Added file size limit check before processing large uploads
+
 **Data & Processing**
 - Implemented session-based CSV storage with unique file identifiers
 - Added dataframe schema inspection before code generation
