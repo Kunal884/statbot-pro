@@ -272,6 +272,19 @@ The agent's security settings are configured in `agent.py`:
 - `BLOCKED_BUILTINS`: Restricted built-in functions
 - `timeout`: Code execution timeout (default: 30 seconds)
 
+## Visualization
+
+feat(charts): enhance chart generation and export options
+
+- Added download button for generated charts as PNG
+- Closed matplotlib figures explicitly after save to fix memory leak
+- Supported histogram, scatter, line, heatmap and box plot generation
+- Added copy-to-clipboard button for generated Python code blocks
+- Supported exporting full chat conversation as PDF report
+- Auto-saved charts as uniquely named PNGs to static directory
+- Returned chart URLs in API response for frontend rendering
+- 
+
 ## Production Deployment
 
 ### Docker Deployment (Recommended)
