@@ -302,7 +302,24 @@ feat(charts): enhance chart generation and export options
 - Supported exporting full chat conversation as PDF report
 - Auto-saved charts as uniquely named PNGs to static directory
 - Returned chart URLs in API response for frontend rendering
-- 
+
+   feat(visualization): upgrade chart generation system
+
+- Enhanced matplotlib chart rendering
+  - Improved chart quality and resolution
+  - Added automatic chart titles and labels
+
+- Added advanced visualization support
+  - Enabled stacked bar charts and multi-line graphs
+  - Improved heatmap readability for large datasets
+
+- Optimized chart memory handling
+  - Closed matplotlib figures after export
+  - Reduced backend memory consumption
+
+- Improved chart export functionality
+  - Supported PNG download for generated charts
+  - Added chart preview rendering in frontend
 
 ## Production Deployment
 
