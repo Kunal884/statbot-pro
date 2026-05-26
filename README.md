@@ -163,7 +163,7 @@ curl -X POST -H "Content-Type: application/json" \
 curl http://localhost:8001/static/chart_abc123.png
 ```
 feat: implement AI-powered CSV analysis system
-
+i
 - Added natural language question processing
 - Integrated autonomous Python code generation
 - Enabled chart visualization support
@@ -208,6 +208,25 @@ feat: implement AI-powered CSV analysis system
 - Confidence Scoring — Show how confident the agent is in each answer
 - Fallback Explanation — Plain English explanation when code execution fails
 - Context Memory — Remember previous answers to support follow-up questions
+
+- feat(agent): improve AI analysis workflow
+
+- Added intelligent dataset schema detection
+  - Automatically identifies numeric, categorical, and datetime columns
+  - Improves analysis accuracy for mixed datasets
+
+- Enhanced follow-up question handling
+  - Maintains session memory between user queries
+  - Supports context-aware analysis responses
+
+- Improved autonomous retry mechanism
+  - Detects execution errors automatically
+  - Regenerates corrected Python code up to 3 retries
+
+- Added confidence scoring system
+  - Displays confidence level for generated insights
+  - Helps users evaluate analysis reliability
+
 
 ## 📁 Project Structure
 
@@ -283,7 +302,24 @@ feat(charts): enhance chart generation and export options
 - Supported exporting full chat conversation as PDF report
 - Auto-saved charts as uniquely named PNGs to static directory
 - Returned chart URLs in API response for frontend rendering
-- 
+
+   feat(visualization): upgrade chart generation system
+
+- Enhanced matplotlib chart rendering
+  - Improved chart quality and resolution
+  - Added automatic chart titles and labels
+
+- Added advanced visualization support
+  - Enabled stacked bar charts and multi-line graphs
+  - Improved heatmap readability for large datasets
+
+- Optimized chart memory handling
+  - Closed matplotlib figures after export
+  - Reduced backend memory consumption
+
+- Improved chart export functionality
+  - Supported PNG download for generated charts
+  - Added chart preview rendering in frontend
 
 ## Production Deployment
 
