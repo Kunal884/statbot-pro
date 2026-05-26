@@ -169,7 +169,7 @@ i
 - Enabled chart visualization support
 - Added secure sandbox execution
   
-## Security Features
+## Security Features:
 
 - **Sandboxed Execution**: Code runs in restricted environment
 - **Limited Imports**: Only pandas, numpy, matplotlib, math allowed
