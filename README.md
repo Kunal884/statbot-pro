@@ -178,6 +178,16 @@ i
 - **Execution Timeout**: Prevents infinite loops
 - **Input Validation**: All inputs sanitized and validated
 
+## Frontend Components
+
+- Landing page with drag and drop file upload zone
+- Left panel showing column names, data types and first 10 row preview
+- Center chat panel for typing questions and viewing AI responses
+- Right results panel displaying text output and generated charts
+- Follow up question suggestions shown after every analysis
+- Reasoning toggle to show or hide AI thinking process
+- Reset button to clear session and upload a new CSV file
+
 
 ## 🤖 Agent Capabilities
 
