@@ -223,10 +223,19 @@ i
 - "Find outliers in the revenue data"
 
 ## Agent Intelligence
+
 - Multi-step Reasoning — Break complex questions into sub-tasks automatically
 - Confidence Scoring — Show how confident the agent is in each answer
 - Fallback Explanation — Plain English explanation when code execution fails
 - Context Memory — Remember previous answers to support follow-up questions
+- Inspects dataframe schema automatically before generating any analysis code
+- Detects question intent to choose between computation and visualization
+- Injects column names and data types into prompt for accurate code generation
+- Self corrects failed code up to 3 times before returning error to user
+- Provides real time step by step progress updates in the chat interface
+- Restricted sandbox ensures only safe Python libraries are executed
+
+
 
 - feat(agent): improve AI analysis workflow
 
