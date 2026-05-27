@@ -2,7 +2,7 @@
 
 An autonomous CSV data analyst agent with a modern React frontend that generates Python code to answer natural language questions about your data.
  
-## Features
+## Features:
 
 - **Modern Web Interface**: Beautiful React frontend with real-time chat interface
 - **Autonomous Analysis**: Upload CSV files and ask questions in natural language
@@ -13,7 +13,7 @@ An autonomous CSV data analyst agent with a modern React frontend that generates
 - **REST API**: Full API access for programmatic usage
 - **Session Management**: Maintain context across multiple questions
 
-## Architecture
+## Architecture:
 
 - **Frontend**: React + TypeScript + Vite + shadcn/ui
 - **Backend**: FastAPI (Python)
@@ -23,7 +23,7 @@ An autonomous CSV data analyst agent with a modern React frontend that generates
 - **Security**: Sandboxed code execution with restricted imports
 - **Storage**: Local filesystem with public URLs for charts
 
-## System Status
+## System Status:
 
 **Frontend-Backend Integration**: **FULLY INTEGRATED & CLEAN**
 - Modern React frontend with real-time chat interface
@@ -169,7 +169,7 @@ i
 - Enabled chart visualization support
 - Added secure sandbox execution
   
-## Security Features
+## Security Features:
 
 - **Sandboxed Execution**: Code runs in restricted environment
 - **Limited Imports**: Only pandas, numpy, matplotlib, math allowed
