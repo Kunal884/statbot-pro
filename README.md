@@ -558,6 +558,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Added deployment checklist
 - Enhanced project structure for cloud deployment
 
+## Testing
+- Basic functionality tested using test_examples.py script
+- Advanced features tested using advanced_test.py script
+- Manual testing done by uploading sales_demo.csv and asking sample questions
+- API endpoints tested directly using FastAPI /docs interactive interface
+- Error handling tested by uploading invalid files and asking wrong questions
+
 ## Challenges Faced
 _Python 3.14 incompatible with Pandas 2.1.3 → solved by switching to Python 3.11
 -Missing logs/ and static/ directories causing server crash → fixed by creating them
