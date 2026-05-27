@@ -188,6 +188,15 @@ i
 - Reasoning toggle to show or hide AI thinking process
 - Reset button to clear session and upload a new CSV file
 
+ ## Deployment Options
+ 
+- Option 1: Local development using two terminals for backend and frontend
+- Option 2: Docker deployment using docker-compose up --build single command
+- Option 3: Cloud deployment with backend on Render and frontend on Vercel
+- render.yaml configuration file already included for Render deployment
+- vercel.json configuration file already included for Vercel deployment
+- Environment variables documented in DEPLOYMENT.md for production setup
+
 
 ## 🤖 Agent Capabilities
 
