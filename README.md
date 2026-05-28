@@ -237,7 +237,7 @@ i
 
 - feat(ai): enhance autonomous agent intelligence
 - Added retry progress updates visible in chat interface
-- Improved confidence scoring for generated insights
+- Improved confidence scoring for generated insights8
 - Added fallback plain-English explanations for failed analyses
 - Enhanced multi-step reasoning for complex analytical questions
 - Improved generated Python code readability and debugging support
@@ -353,6 +353,19 @@ feat(charts): enhance chart generation and export options
 - Improved chart export functionality
   - Supported PNG download for generated charts
   - Added chart preview rendering in frontend
+    
+- feat(visualization-engine): upgrade chart rendering
+- Added advanced chart customization support
+- Automatic chart titles and axis labels
+- Better legend placement for readability
+- Improved visualization compatibility
+- Supported multi-line trend graphs
+-  Added grouped bar chart rendering
+- Optimized chart generation pipeline
+- Reduced chart rendering time
+- Improved memory cleanup after export
+
+
 
 ## Production Deployment
 
