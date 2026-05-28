@@ -235,7 +235,12 @@ i
 - Provides real time step by step progress updates in the chat interface
 - Restricted sandbox ensures only safe Python libraries are executed
 
-
+- feat(ai): enhance autonomous agent intelligence
+- Added retry progress updates visible in chat interface
+- Improved confidence scoring for generated insights
+- Added fallback plain-English explanations for failed analyses
+- Enhanced multi-step reasoning for complex analytical questions
+- Improved generated Python code readability and debugging support
 
 - feat(agent): improve AI analysis workflow
 
@@ -464,6 +469,12 @@ pip install -r requirements.txt
 - Add memory monitoring
 - Consider using Dask for big data
 
+feat(api): improve backend reliability and monitoring
+- Added request timing logs for performance tracking
+- Implemented API health diagnostics for deployment monitoring
+- Added centralized exception handling middleware in FastAPI
+- Improved async request handling for long-running analysis tasks
+- Added structured JSON logging for debugging and monitoring
 ## Performance Tips
 
 - Use smaller CSV files for faster processing
