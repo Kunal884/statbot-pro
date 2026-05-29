@@ -1,4 +1,4 @@
-# StatBot Pro
+<img width="1472" height="1852" alt="image" src="https://github.com/user-attachments/assets/8048476a-8bd2-49fc-9d6d-d00a3aeddb2f" /># StatBot Pro
 
 An autonomous CSV data analyst agent with a modern React frontend that generates Python code to answer natural language questions about your data.
  
@@ -33,6 +33,12 @@ An autonomous CSV data analyst agent with a modern React frontend that generates
 - Chart visualization support
 - Error handling and user feedback
 - All third-party references removed
+
+feat(ai): implement AI-powered CSV analysis system
+- Added natural language question processing
+- Integrated autonomous Python code generation
+- Enabled chart visualization support
+- Added secure sandbox execution
 
 
 **Current Features**:
