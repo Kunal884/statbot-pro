@@ -1,4 +1,4 @@
-# StatBot Pro
+<img width="1472" height="1852" alt="image" src="https://github.com/user-attachments/assets/8048476a-8bd2-49fc-9d6d-d00a3aeddb2f" /># StatBot Pro
 
 An autonomous CSV data analyst agent with a modern React frontend that generates Python code to answer natural language questions about your data.
  
@@ -33,6 +33,12 @@ An autonomous CSV data analyst agent with a modern React frontend that generates
 - Chart visualization support
 - Error handling and user feedback
 - All third-party references removed
+
+feat(ai): implement AI-powered CSV analysis system
+- Added natural language question processing
+- Integrated autonomous Python code generation
+- Enabled chart visualization support
+- Added secure sandbox execution
 
 
 **Current Features**:
@@ -178,6 +184,25 @@ i
 - **Execution Timeout**: Prevents infinite loops
 - **Input Validation**: All inputs sanitized and validated
 
+## Frontend Components
+
+- Landing page with drag and drop file upload zone
+- Left panel showing column names, data types and first 10 row preview
+- Center chat panel for typing questions and viewing AI responses
+- Right results panel displaying text output and generated charts
+- Follow up question suggestions shown after every analysis
+- Reasoning toggle to show or hide AI thinking process
+- Reset button to clear session and upload a new CSV file
+
+ ## Deployment Options
+ 
+- Option 1: Local development using two terminals for backend and frontend
+- Option 2: Docker deployment using docker-compose up --build single command
+- Option 3: Cloud deployment with backend on Render and frontend on Vercel
+- render.yaml configuration file already included for Render deployment
+- vercel.json configuration file already included for Vercel deployment
+- Environment variables documented in DEPLOYMENT.md for production setup
+
 
 ## 🤖 Agent Capabilities
 
@@ -204,16 +229,37 @@ i
 - "Find outliers in the revenue data"
 
 ## Agent Intelligence
+
 - Multi-step Reasoning — Break complex questions into sub-tasks automatically
 - Confidence Scoring — Show how confident the agent is in each answer
 - Fallback Explanation — Plain English explanation when code execution fails
 - Context Memory — Remember previous answers to support follow-up questions
+- Inspects dataframe schema automatically before generating any analysis code
+- Detects question intent to choose between computation and visualization
+- Injects column names and data types into prompt for accurate code generation
+- Self corrects failed code up to 3 times before returning error to user
+- Provides real time step by step progress updates in the chat interface
+- Restricted sandbox ensures only safe Python libraries are executed
+
+- feat(ai): enhance autonomous agent intelligence
+- Added retry progress updates visible in chat interface
+- Improved confidence scoring for generated insights8
+- Added fallback plain-English explanations for failed analyses
+- Enhanced multi-step reasoning for complex analytical questions
+- Improved generated Python code readability and debugging support
 
 - feat(agent): improve AI analysis workflow
 
 - Added intelligent dataset schema detection
   - Automatically identifies numeric, categorical, and datetime columns
   - Improves analysis accuracy for mixed datasets
+ 
+- feat(ai): enhance autonomous agent intelligence
+- Added retry progress updates visible in chat interface
+- Improved confidence scoring for generated insights
+- Added fallback plain-English explanations for failed analyses
+- Enhanced multi-step reasoning for complex analytical questions
+- Improved generated Python code readability and debugging support
 
 - Enhanced follow-up question handling
   - Maintains session memory between user queries
@@ -320,6 +366,19 @@ feat(charts): enhance chart generation and export options
 - Improved chart export functionality
   - Supported PNG download for generated charts
   - Added chart preview rendering in frontend
+    
+- feat(visualization-engine): upgrade chart rendering
+- Added advanced chart customization support
+- Automatic chart titles and axis labels
+- Better legend placement for readability
+- Improved visualization compatibility
+- Supported multi-line trend graphs
+-  Added grouped bar chart rendering
+- Optimized chart generation pipeline
+- Reduced chart rendering time
+- Improved memory cleanup after export
+
+
 
 ## Production Deployment
 
@@ -351,6 +410,12 @@ feat(backend): strengthen API security and performance
 - Added graceful error handling for CSVs with no numeric columns
 - Implemented request debouncing to prevent duplicate submissions
 - Added /health endpoint for uptime monitoring and deployment checks
+
+- feat(agent): improve AI analysis workflow
+- Added intelligent dataset schema detection (numeric, categorical, datetime columns)
+- Enhanced follow-up question handling with session memory between queries
+- Improved autonomous retry mechanism — regenerates corrected code up to 3 times
+- Added confidence scoring system to evaluate analysis reliability
 
 ### Security Considerations
 - Run behind a reverse proxy (nginx/Apache)
@@ -436,6 +501,12 @@ pip install -r requirements.txt
 - Add memory monitoring
 - Consider using Dask for big data
 
+feat(api): improve backend reliability and monitoring
+- Added request timing logs for performance tracking
+- Implemented API health diagnostics for deployment monitoring
+- Added centralized exception handling middleware in FastAPI
+- Improved async request handling for long-running analysis tasks
+- Added structured JSON logging for debugging and monitoring
 ## Performance Tips
 
 - Use smaller CSV files for faster processing
@@ -557,6 +628,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Improved production setup documentation
 - Added deployment checklist
 - Enhanced project structure for cloud deployment
+
+## Testing
+- Basic functionality tested using test_examples.py script
+- Advanced features tested using advanced_test.py script
+- Manual testing done by uploading sales_demo.csv and asking sample questions
+- API endpoints tested directly using FastAPI /docs interactive interface
+- Error handling tested by uploading invalid files and asking wrong questions
 
 ## Challenges Faced
 _Python 3.14 incompatible with Pandas 2.1.3 → solved by switching to Python 3.11
