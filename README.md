@@ -411,6 +411,12 @@ feat(backend): strengthen API security and performance
 - Implemented request debouncing to prevent duplicate submissions
 - Added /health endpoint for uptime monitoring and deployment checks
 
+- feat(agent): improve AI analysis workflow
+- Added intelligent dataset schema detection (numeric, categorical, datetime columns)
+- Enhanced follow-up question handling with session memory between queries
+- Improved autonomous retry mechanism — regenerates corrected code up to 3 times
+- Added confidence scoring system to evaluate analysis reliability
+
 ### Security Considerations
 - Run behind a reverse proxy (nginx/Apache)
 - Enable HTTPS with SSL certificates
