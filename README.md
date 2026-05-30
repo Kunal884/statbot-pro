@@ -174,6 +174,17 @@ i
 - Integrated autonomous Python code generation
 - Enabled chart visualization support
 - Added secure sandbox execution
+
+feat: expand StatBot Pro capabilities and performance — May 30, 2026
+feat(multi-format):
+  - Added Excel (.xlsx) file upload support alongside CSV
+  - Enabled JSON and Parquet file parsing via pandas read methods
+  - Auto-detected file type on upload and routed to correct parser
+
+feat(llm):
+  - Integrated support for open-source LLaMA model as OpenAI fallback
+  - Added model selection toggle in settings panel (OpenAI / LLaMA)
+  - Reduced token usage by trimming dataframe context before injection
   
 ## Security Features:
 
