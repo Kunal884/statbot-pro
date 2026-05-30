@@ -59,9 +59,13 @@ fix:
   - Fixed rolling average chart breaking on datasets with missing dates
   - Resolved duplicate API submission on rapid button clicks
   - Fixed box plot crash when categorical column has only one unique value
+  - 
+perf:
+  - Added query result caching for repeated questions on same dataset
+  - Reduced initial page load time by lazy loading chart components
+  - Optimized dataframe schema inspection to run once per session
 
-
-
+<!-- Updated: May 30, 2026 -->
 
 
 **Current Features**:
