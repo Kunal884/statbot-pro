@@ -40,6 +40,21 @@ feat(ai): implement AI-powered CSV analysis system
 - Enabled chart visualization support
 - Added secure sandbox execution
 
+feat(export):
+  - Added full chat conversation export as downloadable PDF report
+  - Enabled copy-to-clipboard button for every generated Python code block
+  - Added PNG download button directly below each generated chart
+    
+feat(ui):
+  - Added dark mode toggle with persistent localStorage preference
+  - Introduced collapsible left panel for smaller screen layouts
+  - Added loading skeleton placeholders during analysis processing
+
+
+
+
+
+
 
 **Current Features**:
 -  CSV file upload with drag-and-drop interface
