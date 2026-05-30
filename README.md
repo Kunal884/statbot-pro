@@ -50,7 +50,15 @@ feat(ui):
   - Introduced collapsible left panel for smaller screen layouts
   - Added loading skeleton placeholders during analysis processing
 
+feat(session):
+  - Implemented named session support to save and reload past analyses
+  - Added session history sidebar listing previous questions and answers
+  - Enabled re-run of any previous question from session history
 
+fix:
+  - Fixed rolling average chart breaking on datasets with missing dates
+  - Resolved duplicate API submission on rapid button clicks
+  - Fixed box plot crash when categorical column has only one unique value
 
 
 
