@@ -40,6 +40,33 @@ feat(ai): implement AI-powered CSV analysis system
 - Enabled chart visualization support
 - Added secure sandbox execution
 
+feat(export):
+  - Added full chat conversation export as downloadable PDF report
+  - Enabled copy-to-clipboard button for every generated Python code block
+  - Added PNG download button directly below each generated chart
+    
+feat(ui):
+  - Added dark mode toggle with persistent localStorage preference
+  - Introduced collapsible left panel for smaller screen layouts
+  - Added loading skeleton placeholders during analysis processing
+
+feat(session):
+  - Implemented named session support to save and reload past analyses
+  - Added session history sidebar listing previous questions and answers
+  - Enabled re-run of any previous question from session history
+
+fix:
+  - Fixed rolling average chart breaking on datasets with missing dates
+  - Resolved duplicate API submission on rapid button clicks
+  - Fixed box plot crash when categorical column has only one unique value
+  - 
+perf:
+  - Added query result caching for repeated questions on same dataset
+  - Reduced initial page load time by lazy loading chart components
+  - Optimized dataframe schema inspection to run once per session
+
+<!-- Updated: May 30, 2026 -->
+
 
 **Current Features**:
 -  CSV file upload with drag-and-drop interface
@@ -174,6 +201,17 @@ i
 - Integrated autonomous Python code generation
 - Enabled chart visualization support
 - Added secure sandbox execution
+
+feat: expand StatBot Pro capabilities and performance — May 30, 2026
+feat(multi-format):
+  - Added Excel (.xlsx) file upload support alongside CSV
+  - Enabled JSON and Parquet file parsing via pandas read methods
+  - Auto-detected file type on upload and routed to correct parser
+
+feat(llm):
+  - Integrated support for open-source LLaMA model as OpenAI fallback
+  - Added model selection toggle in settings panel (OpenAI / LLaMA)
+  - Reduced token usage by trimming dataframe context before injection
   
 ## Security Features:
 
