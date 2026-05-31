@@ -1403,6 +1403,8 @@ _Python 3.14 incompatible with Pandas 2.1.3 → solved by switching to Python 3.
 - Automatic chart and graph generation
 - User-friendly interface with no coding required
 
+ '''' feat: complete StatBot Pro — Infotact Solutions internship project, May 2026
+
 ## Team Members
 
 - **Kunal Girme** — [github.com/Kunal884](https://github.com/Kunal884)
