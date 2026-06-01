@@ -45,6 +45,8 @@ feat(export):
   - Enabled copy-to-clipboard button for every generated Python code block
   - Added PNG download button directly below each generated chart
 
+
+
  
 ## Features:
 
@@ -56,6 +58,7 @@ feat(export):
 - **Real-time Processing**: Stream analysis steps for transparency
 - **REST API**: Full API access for programmatic usage
 - **Session Management**: Maintain context across multiple questions
+
 
 ## Architecture:
 
@@ -108,6 +111,19 @@ perf:
   - Added query result caching for repeated questions on same dataset
   - Reduced initial page load time by lazy loading chart components
   - Optimized dataframe schema inspection to run once per session
+
+feat(init): scaffold project with React + Vite + TypeScript
+
+Initialize StatBot Pro monorepo structure.
+
+- Set up frontend with React 18, TypeScript 5, and Vite 5
+- Configure shadcn/ui component library with Tailwind CSS
+- Set up backend with FastAPI and Python 3.11
+- Add ESLint + Prettier for code quality
+- Configure path aliases and environment variable handling
+- Add .gitignore, README, and project structure docs
+
+Co-authored-by: team <team@statbot.dev>
 
 <!-- Updated: May 30, 2026 -->
 
