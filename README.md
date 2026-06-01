@@ -112,6 +112,17 @@ perf:
   - Reduced initial page load time by lazy loading chart components
   - Optimized dataframe schema inspection to run once per session
 
+feat(backend): add FastAPI server with CSV upload endpoint
+
+Implement core backend server with file ingestion pipeline.
+
+- POST /api/upload accepts multipart CSV files up to 50MB
+- Parse uploaded CSV with Pandas and infer column dtypes
+- Return schema preview: column names, types, null counts, row count
+- Store parsed DataFrame in memory keyed by session UUID
+- Add CORS middleware configured for local frontend dev
+
+
 feat(init): scaffold project with React + Vite + TypeScript
 
 Initialize StatBot Pro monorepo structure.
