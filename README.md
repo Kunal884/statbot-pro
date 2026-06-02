@@ -44,6 +44,12 @@ feat(export):
   - Added full chat conversation export as downloadable PDF report
   - Enabled copy-to-clipboard button for every generated Python code block
   - Added PNG download button directly below each generated chart
+  refactor: modularize codebase and centralize config
+
+- Extracted sandboxed code runner into dedicated sandbox.py module
+- Centralized error messages into constants.py for localization support
+- Replaced hardcoded API URLs with VITE_API_URL env variable in frontend
+Added /health endpoint for uptime monitoring and deployment checks- 
 
 
 
