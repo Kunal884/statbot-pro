@@ -46,12 +46,20 @@ feat(export):
   - Added PNG download button directly below each generated chart
   refactor: modularize codebase and centralize config
 
-- Extracted sandboxed code runner into dedicated sandbox.py module
+
+'' Extracted sandboxed code runner into dedicated sandbox.py module
+
 - Centralized error messages into constants.py for localization support
 - Replaced hardcoded API URLs with VITE_API_URL env variable in frontend
-Added /health endpoint for uptime monitoring and deployment checks- 
+Added /health endpoint for uptime monitoring and deployment checks-
 
+''chore(devops): add Docker and cloud deployment config
 
+- Added docker-compose.yml for single-command local and production setup
+- Included start-dev.py and start-dev.bat for cross-platform dev startup
+- Configured Vite proxy to route frontend API calls to FastAPI backend
+- Added render.yaml and vercel.json for cloud deployment
+- Documented all environment variables in DEPLOYMENT.md
 
  
 ## Features:
