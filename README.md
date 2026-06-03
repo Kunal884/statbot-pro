@@ -1233,6 +1233,20 @@ Upload a CSV file for analysis.
   "sample": [{"col1": "val1", ...}, ...]
 }
 ```
+feat: add PDF export support
+feat: add code copy functionality
+feat: enable chart PNG downloads
+refactor: extract sandbox module
+refactor: centralize app configuration
+feat: add health check endpoint
+chore: use environment variables for API URLs
+feat: add Docker deployment setup
+feat: add cloud deployment configs
+docs: update deployment documentation
+fix: improve session management
+ui: enhance chat experience
+
+
 
 #### `POST /ask_question`
 Ask a natural language question about the uploaded data.
