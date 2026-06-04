@@ -1,7 +1,7 @@
 <img width="1472" height="1852" alt="image" src="https://github.com/user-attachments/assets/8048476a-8bd2-49fc-9d6d-d00a3aeddb2f" /># StatBot Pro
 
 An autonomous CSV data analyst agent with a modern React frontend that generates Python code to answer natural language questions about your data.
- 
+ a
 ## Features:
 
 - **Modern Web Interface**: Beautiful React frontend with real-time chat interface
@@ -60,6 +60,19 @@ Added /health endpoint for uptime monitoring and deployment checks-
 - Configured Vite proxy to route frontend API calls to FastAPI backend
 - Added render.yaml and vercel.json for cloud deployment
 - Documented all environment variables in DEPLOYMENT.md
+
+  feat: release StatBot Pro v1.0 — AI-powered CSV analysis platform
+
+- React + FastAPI full-stack application with real-time chat interface
+- Autonomous agent with self-correcting code generation (3 retries)
+- Sandboxed Python execution (pandas, numpy, matplotlib, math only)
+- Drag-and-drop CSV upload with schema preview and null-value stats
+- Automatic chart generation with PNG download support
+- PDF export of full chat conversation
+- Session management with named session history and re-run support
+- Dark mode toggle with persistent preference
+- Rate limiting, CORS handling, and /health monitoring endpoint
+- Docker + Render + Vercel deployment configs included
 
  
 ## Features:
