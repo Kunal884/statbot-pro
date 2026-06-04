@@ -40,6 +40,18 @@ feat(ai): implement AI-powered CSV analysis system
 - Enabled chart visualization support
 - Added secure sandbox execution
 
+ feat: add intelligent data analysis agent with full-stack deployment
+
+- Natural language to Python code generation via LLM
+- Auto-retry loop corrects failed executions up to 3 times
+- Schema-aware prompt injection using dataframe column types
+- Matplotlib visualizations served as static PNG endpoints
+- Session-scoped dataframe storage with unique UUIDs
+- React chat UI with real-time step-by-step agent progress
+- Code copy button and chart download on every response
+- Input sanitization and sandboxed execution environment
+- Cross-platform dev startup scripts (Windows + Linux/Mac)
+
 feat(export):
   - Added full chat conversation export as downloadable PDF report
   - Enabled copy-to-clipboard button for every generated Python code block
