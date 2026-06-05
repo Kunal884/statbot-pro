@@ -1396,7 +1396,15 @@ feat(upload): improve CSV upload and data preview experience
 - Included `start-dev.py` and `start-dev.bat` for cross-platform dev startup
 - Configured Vite proxy to route frontend API calls to FastAPI backend
 - Provided Render + Vercel deployment path with environment variable docs
-- 
+
+feat(devops): add Nginx reverse proxy config and production hardening
+
+- Added nginx.conf to route /api requests to FastAPI backend and / to React frontend
+- Configured gzip compression for static assets and API responses
+- Set proxy_read_timeout to 120s to handle long-running analysis requests
+- Added rate limiting zone in Nginx as an extra layer alongside FastAPI throttling
+- Documented Nginx setup steps in DEPLOYMENT.md under Production section
+  
 ## Security
 - Restrict allowed file extensions to .csv only on upload endpoint
 - Add file size limit validation before processing large uploads
