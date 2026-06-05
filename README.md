@@ -710,7 +710,15 @@ feat(upload): improve CSV upload and data preview experience
 - Included `start-dev.py` and `start-dev.bat` for cross-platform dev startup
 - Configured Vite proxy to route frontend API calls to FastAPI backend
 - Provided Render + Vercel deployment path with environment variable docs
-- 
+
+chore(devops): add GitHub Actions CI/CD pipeline for automated deployment
+
+- Added .github/workflows/deploy.yml for automated build and deploy on push to main
+- Configured separate jobs for frontend (Vercel) and backend (Render) deployment
+- Added environment secret injection for VITE_API_URL and OPENAI_API_KEY
+- Enabled build caching for Node.js and Python dependencies to reduce CI time
+- Added status badge to README for live pipeline visibility
+
 ## Security
 - Restrict allowed file extensions to .csv only on upload endpoint
 - Add file size limit validation before processing large uploads
