@@ -719,6 +719,12 @@ chore(devops): add GitHub Actions CI/CD pipeline for automated deployment
 - Enabled build caching for Node.js and Python dependencies to reduce CI time
 - Added status badge to README for live pipeline visibility
 
+chore(devops): add environment variable validation on server startup
+
+- Added startup check to warn if OPENAI_API_KEY is missing or empty
+- Logged active PORT, HOST, and WORKSPACE_DIR values on boot
+- Added .env.example with all required and optional variable templates
+
 ## Security
 - Restrict allowed file extensions to .csv only on upload endpoint
 - Add file size limit validation before processing large uploads
