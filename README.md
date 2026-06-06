@@ -711,6 +711,12 @@ feat(upload): improve CSV upload and data preview experience
 - Configured Vite proxy to route frontend API calls to FastAPI backend
 - Provided Render + Vercel deployment path with environment variable docs
 
+fix(devops): resolve static and logs directory missing on fresh clone
+
+- Auto-create static/ and logs/ directories if not present on startup
+- Added directory existence check in main.py before serving static files
+- Updated README Troubleshooting section with fix for missing dirs error
+
 chore(devops): add GitHub Actions CI/CD pipeline for automated deployment
 
 - Added .github/workflows/deploy.yml for automated build and deploy on push to main
