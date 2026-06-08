@@ -189,6 +189,12 @@ Co-authored-by: team <team@statbot.dev>
 -  Modern UI with shadcn/ui components
 -  Clean codebase with no external dependencies
 
+ feat(export): add advanced report export system
+- Added downloadable PDF report generation
+- Included complete conversation history in exports
+- Improved report formatting and readability
+- Added export support for analysis summaries
+
 ##  Quick Start
 
 ### Option 1: Production Deployment:
