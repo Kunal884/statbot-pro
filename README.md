@@ -52,6 +52,13 @@ feat(ai): implement AI-powered CSV analysis system
 - Input sanitization and sandboxed execution environment
 - Cross-platform dev startup scripts (Windows + Linux/Mac)
 
+refactor(sandbox): strengthen secure code execution
+- Extracted execution engine into dedicated module
+- Improved sandbox isolation and security
+- Simplified execution workflow maintenance
+- Enhanced error handling during code execution
+
+
 feat(export):
   - Added full chat conversation export as downloadable PDF report
   - Enabled copy-to-clipboard button for every generated Python code block
