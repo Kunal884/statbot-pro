@@ -395,6 +395,12 @@ feat(llm):
 - "Create a box plot showing price distribution by category"
 - "Find outliers in the revenue data"
 
+feat(charts): improve visualization management
+- Added PNG download functionality for charts
+- Enhanced chart rendering performance
+- Improved visualization storage workflow
+- Added support for multiple chart outputs
+
 ## Agent Intelligence
 
 - Multi-step Reasoning — Break complex questions into sub-tasks automatically
