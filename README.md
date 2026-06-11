@@ -52,6 +52,13 @@ feat(ai): implement AI-powered CSV analysis system
 - Input sanitization and sandboxed execution environment
 - Cross-platform dev startup scripts (Windows + Linux/Mac)
 
+refactor(sandbox): strengthen secure code execution
+- Extracted execution engine into dedicated module
+- Improved sandbox isolation and security
+- Simplified execution workflow maintenance
+- Enhanced error handling during code execution
+
+
 feat(export):
   - Added full chat conversation export as downloadable PDF report
   - Enabled copy-to-clipboard button for every generated Python code block
@@ -189,6 +196,12 @@ Co-authored-by: team <team@statbot.dev>
 -  Modern UI with shadcn/ui components
 -  Clean codebase with no external dependencies
 
+ feat(export): add advanced report export system
+- Added downloadable PDF report generation
+- Included complete conversation history in exports
+- Improved report formatting and readability
+- Added export support for analysis summaries
+
 ##  Quick Start
 
 ### Option 1: Production Deployment:
@@ -207,6 +220,19 @@ Co-authored-by: team <team@statbot.dev>
 4. Deploy automatically
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
+
+feat(ai): enhance autonomous CSV analysis engine
+- Improved natural language query understanding
+- Optimized Python code generation workflow
+- Enhanced self-correction and retry mechanism
+- Increased analysis accuracy for complex datasets
+
+feat(charts): improve visualization management
+- Added PNG download functionality for charts
+- Enhanced chart rendering performance
+- Improved visualization storage workflow
+- Added support for multiple chart outputs
+
  
 ### Option 2: Development Mode (Local):
 
@@ -375,6 +401,12 @@ feat(llm):
 - "Which region has the most consistent performance?"
 - "Create a box plot showing price distribution by category"
 - "Find outliers in the revenue data"
+
+feat(charts): improve visualization management
+- Added PNG download functionality for charts
+- Enhanced chart rendering performance
+- Improved visualization storage workflow
+- Added support for multiple chart outputs
 
 ## Agent Intelligence
 
@@ -710,7 +742,27 @@ feat(upload): improve CSV upload and data preview experience
 - Included `start-dev.py` and `start-dev.bat` for cross-platform dev startup
 - Configured Vite proxy to route frontend API calls to FastAPI backend
 - Provided Render + Vercel deployment path with environment variable docs
-- 
+
+fix(devops): resolve static and logs directory missing on fresh clone
+
+- Auto-create static/ and logs/ directories if not present on startup
+- Added directory existence check in main.py before serving static files
+- Updated README Troubleshooting section with fix for missing dirs error
+
+chore(devops): add GitHub Actions CI/CD pipeline for automated deployment
+
+- Added .github/workflows/deploy.yml for automated build and deploy on push to main
+- Configured separate jobs for frontend (Vercel) and backend (Render) deployment
+- Added environment secret injection for VITE_API_URL and OPENAI_API_KEY
+- Enabled build caching for Node.js and Python dependencies to reduce CI time
+- Added status badge to README for live pipeline visibility
+
+chore(devops): add environment variable validation on server startup
+
+- Added startup check to warn if OPENAI_API_KEY is missing or empty
+- Logged active PORT, HOST, and WORKSPACE_DIR values on boot
+- Added .env.example with all required and optional variable templates
+
 ## Security
 - Restrict allowed file extensions to .csv only on upload endpoint
 - Add file size limit validation before processing large uploads
@@ -1388,7 +1440,15 @@ feat(upload): improve CSV upload and data preview experience
 - Included `start-dev.py` and `start-dev.bat` for cross-platform dev startup
 - Configured Vite proxy to route frontend API calls to FastAPI backend
 - Provided Render + Vercel deployment path with environment variable docs
-- 
+
+feat(devops): add Nginx reverse proxy config and production hardening
+
+- Added nginx.conf to route /api requests to FastAPI backend and / to React frontend
+- Configured gzip compression for static assets and API responses
+- Set proxy_read_timeout to 120s to handle long-running analysis requests
+- Added rate limiting zone in Nginx as an extra layer alongside FastAPI throttling
+- Documented Nginx setup steps in DEPLOYMENT.md under Production section
+  
 ## Security
 - Restrict allowed file extensions to .csv only on upload endpoint
 - Add file size limit validation before processing large uploads
