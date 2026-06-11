@@ -1184,5 +1184,4 @@ except Exception as e:
                 'numeric_columns': [],
                 'categorical_columns': [],
                 'datetime_columns': []
-            }#   U p d a t e d  
- 
+            }

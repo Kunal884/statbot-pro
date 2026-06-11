@@ -863,5 +863,4 @@ if __name__ == "__main__":
     logger.info(f"Rate limit: {config.RATE_LIMIT_REQUESTS} requests/hour")
     
     # Start server
-    uvicorn.run("main:app", **uvicorn_config)#   U p d a t e d  
- 
+    uvicorn.run("main:app", **uvicorn_config)
