@@ -1,4 +1,5 @@
-import os
+with open('config.py', 'w', encoding='utf-8', newline='\n') as f:
+    f.write("""import os
 from pathlib import Path
 
 try:
@@ -14,19 +15,12 @@ class Config:
     LOG_LEVEL = "debug"
     ENVIRONMENT = "development"
     CORS_ORIGINS = ["http://localhost:3000", "http://localhost:8080"]
-    ALLOWED_HOSTS = ["*"]
     MAX_FILE_SIZE = 50 * 1024 * 1024
     ALLOWED_EXTENSIONS = [".csv"]
     RATE_LIMIT_REQUESTS = 1000
     RATE_LIMIT_WINDOW = 3600
     EXECUTION_TIMEOUT = 30
     MAX_RETRIES = 3
-    MAX_ROWS = 10000
-    MAX_COLUMNS = 100
-    MAX_CELL_SIZE = 1000
-    MAX_QUERY_LENGTH = 5000
-    MAX_RESPONSE_LENGTH = 10000
-    CLEANUP_INTERVAL = 3600
     BASE_DIR = Path(__file__).parent
     WORKSPACE_DIR = BASE_DIR / "workspace"
     STATIC_DIR = BASE_DIR / "static"
@@ -50,3 +44,7 @@ config = Config()
 
 def get_config():
     return config
+""")
+print("Done!")
+content = open('config.py', 'rb').read()
+print("Null bytes found:", b'\x00' in content)

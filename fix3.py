@@ -1,4 +1,5 @@
-import os
+with open('config.py', 'w', encoding='utf-8', newline='\n') as f:
+    f.write("""import os
 from pathlib import Path
 
 try:
@@ -50,3 +51,5 @@ config = Config()
 
 def get_config():
     return config
+""")
+print("Done!")
