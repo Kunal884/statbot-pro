@@ -230,5 +230,4 @@ def main():
         print("❌ Demo failed at upload stage")
 
 if __name__ == "__main__":
-    main()#   U p d a t e d  
- 
+    main()# Updated

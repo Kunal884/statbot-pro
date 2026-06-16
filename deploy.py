@@ -397,5 +397,4 @@ def main():
         sys.exit(1)
 
 if __name__ == "__main__":
-    main()#   U p d a t e d  
- 
+    main()# Updated

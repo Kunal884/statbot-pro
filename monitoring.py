@@ -493,5 +493,4 @@ class MetricsExporter:
 metrics_collector = MetricsCollector()
 system_monitor = SystemMonitor(metrics_collector)
 health_checker = HealthChecker(metrics_collector)
-metrics_exporter = MetricsExporter(metrics_collector) 
- 
+metrics_exporter = MetricsExporter(metrics_collector)
